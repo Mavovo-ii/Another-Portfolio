@@ -66,6 +66,7 @@ h2 span {
   font-size: 1rem;
   font-weight: bolder;
   margin-top: 3rem;
+  cursor: pointer;
 }
 
 .headerImg {
@@ -99,6 +100,7 @@ button {
   color: white;
   padding: 0.6rem 0.6rem 0.2rem 0.6rem;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 svg {
