@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.first-parent-container {
+  background: #141627;
+  padding-bottom: 3rem;
+}
+
+.child-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: rgb(194, 187, 187);
+}
+
+nav ul li:hover {
+  border-bottom: 2px solid #fa94a6;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+h1 span {
+  color: #fa94a6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+h2 span {
+  color: #fa94a6;
+}
+
+.see-my-work-btn {
+  border: none;
+  background-color: #fa94a6;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 3rem;
+}
+
+.headerImg {
+  width: 100%;
+  height: 400px;
+}
+
+/********** WORK SECTION STYLES ***********/
+
+.second-parent-container {
+  background: #1b1e32;
+  padding-bottom: 4rem;
+}
+
+.pink-line-container {
+  display: flex;
+  gap: 1.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.line {
+  height: 5px;
+  width: 5.5rem;
+  background: #fa94a6;
+  align-self: center;
+}
+
+button {
+  border: none;
+  background: #272e48;
+  color: white;
+  padding: 0.6rem 0.6rem 0.2rem 0.6rem;
+  font-weight: bolder;
+}
+
+svg {
+  font-weight: 700;
+}
+
+.slider-buttons {
+  display: flex;
+  gap: 1.5%;
+  margin-top: 5rem;
+}
+
+.slider-buttons h4 {
+  margin-top: 4px;
+}
+
+/* WORK>>>>Projects Section */
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.live {
+  background: #fa94a6;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  font-size: 1rem;
+  margin-top: 1.8rem;
+}
+
+.projectOne {
+  width: 50%;
+  height: 50vh;
+  margin-top: 3rem;
+}
+
+.bottom-left {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.concept {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.fine-line {
+  align-self: center;
+  height: 2px;
+  width: 2rem;
+  background-color: #fa94a6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* *********ABOUT******* */
+
+.third-parent-container {
+  background: #141627;
+  padding-bottom: 5rem;
+}
+
+.skills {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.thinnest {
+  width: 2rem;
+  height: 2px;
+  background: #fa94a6;
+  align-self: center;
+}
+
+.me {
+  margin-bottom: 1.4rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.3rem;
+}
+
+.certificate {
+  background: #fa94a6;
+  font-size: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+.curriculum-vitae {
+  font-size: 1rem;
+  padding-bottom: 0.7rem;
+  min-width: 10%;
+}
+
+/* **********CONTACT PAGE********* */
+
+.fourth-parent-container {
+  background: #1b1e32;
+  padding-bottom: 4rem;
+}
+
+.fourth-parent-container h2 {
+  margin-bottom: 1.4rem;
+}
+
+.fourth-parent-container p {
+  margin-bottom: 1rem;
+}
+
+.fourth-parent-container button {
+  background: #fa94a6;
+  padding-bottom: 0.8rem;
+}
+
+.number {
+  font-weight: bolder;
+  color: #fa94a6;
+}
+
+/* ********** MEDIA QUERIES *********** */
+
+@media screen and (max-width: 1024px) {
+  .child-container {
+    width: 90%;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 1rem;
+    font-size: 1.2rem;
+    justify-content: space-around;
+  }
+
+  .logo {
+    position: relative;
+    bottom: 1.2rem;
+  }
+
+  header {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  .right-side {
+    order: -1;
+  }
+
+  .see-my-work-btn {
+    padding: 0.6rem 2rem;
+    order: 1;
+  }
+
+  .headerImg {
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+  .second-parent-container h2 {
+    font-size: 1.3rem;
+    gap: 0;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projectOne {
+    order: -1;
+    width: 100%;
+    height: auto;
+  }
+  .bottom-left {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificate {
+    min-width: 25%;
+    align-self: center;
+    font-size: 1rem;
+  }
+
+  .curriculum-vitae {
+    min-width: 25%;
+    align-self: center;
+    font-size: 1rem;
+  }
+
+  .live {
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .child-container {
+    width: 95%;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+    justify-content: space-around;
+  }
+  .logo {
+    position: relative;
+    bottom: 1.2rem;
+  }
+
+  header {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .right-side {
+    order: -1;
+  }
+
+  .see-my-work-btn {
+    padding: 0.6rem 1rem;
+    order: 1;
+  }
+
+  .headerImg {
+    height: 300px;
+    margin-bottom: 0;
+  }
+
+  .second-parent-container h2 {
+    font-size: 1.3rem;
+    gap: 0;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projectOne {
+    order: -1;
+    width: 100%;
+    height: auto;
+  }
+  .bottom-left {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0.6rem 8rem; */
+  }
+
+  .curriculum-vitae {
+    min-width: 25%;
+    align-items: center;
+  }
+
+  .certificate {
+    min-width: 25%;
+    align-items: center;
+  }
+}
